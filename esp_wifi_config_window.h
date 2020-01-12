@@ -100,7 +100,7 @@ public:
 private:
     void devConstruct();
     void devDestroy();
-    void JsonObjectToPlaintText(QJsonObject json_object);
+    void JsonObjectToPlaintText(QJsonObject json_object, bool send_to_uart);
 
 public slots:
     void update_serial_data_to_plaint_text();
